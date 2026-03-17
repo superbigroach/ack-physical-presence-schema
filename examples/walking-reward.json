@@ -1,0 +1,46 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://ack-protocol.github.io/ack-physical-presence-schema/v1"
+  ],
+  "id": "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "type": ["VerifiableCredential", "PhysicalPresenceCredential"],
+  "issuer": "did:ack:issuer:stepwise-health-app",
+  "issuanceDate": "2026-03-17T08:45:00Z",
+  "expirationDate": "2026-04-17T08:45:00Z",
+  "credentialSubject": {
+    "id": "did:ack:user:u-92f3a1bc",
+    "activityType": "walking",
+    "metrics": {
+      "stepCount": 10342,
+      "distanceMeters": 7850.5,
+      "durationSeconds": 5400,
+      "caloriesBurned": 420.0
+    },
+    "location": {
+      "geohash": "dpz83d",
+      "precision": "neighborhood",
+      "method": "device-gps"
+    },
+    "validation": {
+      "method": "multi-source",
+      "sources": ["accelerometer", "gps", "health-api"],
+      "confidenceScore": 0.92
+    },
+    "campaign": {
+      "id": "campaign:walk-to-earn-march-2026",
+      "sponsor": "HealthCo Wellness"
+    },
+    "device": {
+      "attestation": "android-key-attestation",
+      "type": "smartphone"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2026-03-17T08:45:01Z",
+    "verificationMethod": "did:ack:issuer:stepwise-health-app#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z3FXwB7VKqATDmBSQf5JFfGh...example-signature"
+  }
+}

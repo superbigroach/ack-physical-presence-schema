@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://ack-protocol.github.io/ack-physical-presence-schema/v1"
+  ],
+  "id": "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f12345678901",
+  "type": ["VerifiableCredential", "PhysicalPresenceCredential"],
+  "issuer": "did:ack:issuer:fitchain-gyms",
+  "issuanceDate": "2026-03-17T17:30:00Z",
+  "expirationDate": "2026-04-17T17:30:00Z",
+  "credentialSubject": {
+    "id": "did:ack:user:u-48d7e2fa",
+    "activityType": "gym-visit",
+    "metrics": {
+      "durationSeconds": 3600,
+      "caloriesBurned": 550.0
+    },
+    "location": {
+      "geohash": "dr5ru7",
+      "precision": "building",
+      "method": "wifi-proximity"
+    },
+    "validation": {
+      "method": "multi-source",
+      "sources": ["wifi-proximity", "ble-beacon", "check-in-kiosk"],
+      "confidenceScore": 0.97
+    },
+    "campaign": {
+      "id": "campaign:gym-rewards-q1-2026",
+      "sponsor": "InsureFit Premium"
+    },
+    "device": {
+      "attestation": "ios-app-attest",
+      "type": "smartphone"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2026-03-17T17:30:01Z",
+    "verificationMethod": "did:ack:issuer:fitchain-gyms#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z4GYxC8WLrBTEnCSg6KHgIi...example-signature"
+  }
+}

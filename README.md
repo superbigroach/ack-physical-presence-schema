@@ -167,6 +167,21 @@ npx ts-node src/demo.ts
 - [W3C Decentralized Identifiers](https://www.w3.org/TR/did-core/)
 - [ACK Protocol](https://github.com/ack-protocol)
 
+---
+
+## Author
+
+**Sebastian Borjas** — Founder & CEO, [Lucilla Inc.](https://lucilla.app)
+
+Pioneering **pay-per-visit advertising on-chain** — the first platform where businesses pay USDC rewards only when customers physically show up, verified by wearable sensors and GPS, settled transparently on-chain. No impressions, no clicks, no fraud. Real foot traffic, real payments, real proof.
+
+Lucilla combines Circle Programmable Wallets, USDC on Base/Arc, ERC-8004 agent reputation, and W3C Verifiable Credentials to build the trust infrastructure for location-verified agentic commerce.
+
+- Website: [lucilla.app](https://lucilla.app)
+- Email: [s.borjas@lucilla.ca](mailto:s.borjas@lucilla.ca)
+- X: [@sb_lucilla](https://x.com/sb_lucilla)
+- GitHub: [@superbigroach](https://github.com/superbigroach)
+
 ## License
 
 MIT
